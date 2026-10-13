@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-primary: #6C63FF;
+    --color-secondary: #00D4FF;
+    --color-background: #F8F9FC;
+    --color-card: #FFFFFF;
+    --color-text-primary: #1F2937;
+    --color-text-secondary: #6B7280;
+    --color-success: #22C55E;
+    --color-warning: #F59E0B;
+    --color-error: #EF4444;
+  }
+
+  body {
+    background-color: #F0F2F8;
+    color: #1F2937;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* Phone Bezel Simulator Styling */
+.mobile-frame-shadow {
+  box-shadow: 0 25px 50px -12px rgba(108, 99, 255, 0.25), 0 0 0 12px #1E293B, 0 0 0 14px #475569;
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(108, 99, 255, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 16px rgba(108, 99, 255, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(108, 99, 255, 0);
+  }
+}
+
+.animate-pulse-ring {
+  animation: pulse-ring 2s infinite;
+}
+
+/* Audio wave animation */
+@keyframes soundwave {
+  0%, 100% {
+    height: 6px;
+  }
+  50% {
+    height: 28px;
+  }
+}
+
+.audio-bar-1 { animation: soundwave 1.1s ease-in-out infinite; }
+.audio-bar-2 { animation: soundwave 0.8s ease-in-out infinite 0.2s; }
+.audio-bar-3 { animation: soundwave 1.4s ease-in-out infinite 0.4s; }
+.audio-bar-4 { animation: soundwave 0.9s ease-in-out infinite 0.1s; }
+.audio-bar-5 { animation: soundwave 1.2s ease-in-out infinite 0.3s; }

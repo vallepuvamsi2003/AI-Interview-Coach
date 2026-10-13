@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "name": "AI Interview Coach",
+    "slug": "ai-interview-coach",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#6C63FF"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.aiinterviewcoach.app",
+      "infoPlist": {
+        "NSSpeechRecognitionUsageDescription": "AI Interview Coach requires speech recognition to transcribe your spoken answers into text.",
+        "NSMicrophoneUsageDescription": "AI Interview Coach requires microphone access to record your voice answers during interview simulations."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#6C63FF"
+      },
+      "package": "com.aiinterviewcoach.app",
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.INTERNET",
+        "android.permission.MODIFY_AUDIO_SETTINGS"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-av",
+        {
+          "microphonePermission": "Allow AI Interview Coach to record your audio answers."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "ai-interview-coach-app"
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "AI Interview Coach",
+  "description": "Full-stack AI Interview Coach mobile app with voice STT, Gemini-powered question generation, multi-criteria answer evaluation, real-time feedback, analytics, and resume practice.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
